@@ -1,21 +1,86 @@
-html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+<html lang="en">
+  <!-- 
+  Code Made By Deka Tutorial
+  Youtube: Deka Tutorial
+  Tiktok: @deka_tutorial
+  Instagram : @deka_tutorial
+  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+    <title>Happy Birth Day</title>
+    <style>html { scroll-behavior: smooth; } * { padding: 0; margin: 0; font-family: "Ubuntu"; color: rgb(56, 56, 56); } body { background: wheat; /* background-image: url("https://wallpaper.dog/large/10871886.png"); */ background-image: linear-gradient(#ff71c0, #b983ff, #5aaeff); background-position: center; background-size: cover; overflow: hidden; overflow: hidden; } .open { background-image: linear-gradient(#ff71c0, #b983ff); height: 100vh; width: 100vw; position: fixed; top: 0; display: flex; flex-direction: column; align-items: center; align-content: center; justify-content: center; z-index: 1; transition: 0.5s all ease; } .open h2 { /* margin: 0 30px; */ margin-bottom: 20px; color: rgb(56, 56, 56); text-align: center; max-width: 600px; } .open .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123); text-align: center; } .open .card h3 { margin-top: 20px; } .open .card img { height: 100px; } .atas { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; } .atas img { height: 200px; margin-bottom: 50px; padding: 20px 30px; background: white; border-radius: 20px; box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123); } .atas h2 { font-size: 1.5em; padding: 20px 30px; background: white; border-radius: 20px; box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123); } p { display: block; text-align: center; color: rgb(56, 56, 56); background: white; font-weight: bold; font-size: 1.5em; padding: 50px 30px; margin: 40px 20px; border-radius: 20px; box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123); } p.wm { width: fit-content; margin-top: 100px; margin-bottom: 0; padding: 10px 20px; border-radius: 10px 10px 0 0; font-weight: 500; font-size: .9em; color: red; } p.wm a { color: red; text-decoration: none; } .material-icons-sharp { color: red; font-size: 30px; transform: translateY(5px); animation: kenyal 2s ease infinite; cursor: pointer; } @keyframes kenyal { 0% { transform: scale(1) translateY(5px); } 50% { transform: scale(1.2) translateY(5px); } 100% { transform: scale(1) translateY(5px); } }</style>
+  </head>
+  <body class="body">
+    <div class="open">
+      <div class="card">
+        <h2>Ada pesan buat kamu</h2>
+          <img onclick="mulai()" src="https://dekatutorial.github.io/spesial_mail.png" alt="" srcset="" />
+        <h3>Tekan untuk membuka</h3>
+      </div>
+    </div>
+    <div class="atas" id="atas">
+      <img onclick="mulai()" src="https://dekatutorial.github.io/spesial_stikerUltah.png" alt="" />
+      <h2>Scroll kebawah ya</h2>
+    </div>
 
-    </head>
-    <body>
-        <p data-aos="zoom-in">Pencet love nya dehh
-            <i onclick="tanya()" class="material-icons-sharp"> favorite </i></p>
-      
-    </body>
-    <script> AOS.init({ once: true, }); </script> <script> if(musik == "") { musik = "https://dekatutorial.github.io/Gellen%20Martadinata%20-%20Selamat%20Ulang%20Tahun.mp3"} var audio = new Audio(musik); audio.loop = true; audio.autoplay = true; function mulai() { audio.play(); document.querySelector(".open").style = "opacity: 0;"; document.querySelector(".body").style = "overflow-y: scroll;"; setTimeout(function () { document.querySelector(".open").style.display = "none"; }, 1000); } function wa(isi) { window.open("Ultah1.html"); } async function tanya() { var { value: kado } = await swal.fire({ title: "siapa orang spesial mu?", input: "text", showCancelButton: false, }); if (kado) { await swal.fire("ada hadiah lagi nihh pencet ok ya sayangg"); wa(kado); } else { await swal.fire("masa kosong, berati nda aku dong di hatimu"); tanya(); } } </script> 
-</html>
+    <p data-aos="zoom-in">Hai sayangg tebak hari ini hari apa</p>
+    <p data-aos="zoom-in">Apa yhh kok aku lupa</p>
+    <p data-aos="zoom-in">ohh iyya baru inget aku</p>
+    <p data-aos="zoom-in">Happy Birthday Ultramen Cenngeng &#10084;</p>
+    <p data-aos="zoom-in">liat juuga foto foto ini</p>
+
+    <div class="container">
+      <div class="cardd"><img class="image" src="https://user-images.githubusercontent.com/113439717/226619932-ec71be98-daa9-4ce2-a821-6b4f77e4ae5e.jpg"></div>
+      <div class="cardd"> <img class="image" src="https://user-images.githubusercontent.com/113439717/226619940-963f799f-d706-44f3-b9c6-a9197acb3bc0.jpg"></div>
+      <div class="cardd"> <img class="image" src="https://user-images.githubusercontent.com/113439717/226619933-ee874cf1-8f1e-49bf-b33b-a410995bb3fb.jpg"></div>
+      <div class="cardd"> <img class="image" src="https://user-images.githubusercontent.com/113439717/226619935-f3401459-60b4-491d-9d08-af705adb32dc.jpg"></div>
+      <div class="cardd"> <img class="image" src="https://user-images.githubusercontent.com/113439717/226619936-de60d6b7-374e-48e9-b45e-5d38a1260b54.jpg"></div>
+      <div class="cardd"> <img class="image" src="https://user-images.githubusercontent.com/113439717/226619934-dfe9dbb0-8090-4b65-9674-982f94603612.jpg"></div>
+      <div class="cardd"> <img class="image" src="https://user-images.githubusercontent.com/113439717/226619939-57b08398-29a3-48f6-b342-e2d1e4495bc7.jpg"></div>
+      <div class="cardd"> <img class="image" src="https://user-images.githubusercontent.com/113439717/226619938-c3a209a1-3bc4-417f-ac9d-83efc7db9952.jpg"></div>
+    </div>
+
+    <style>
+      .container {
+        display:flex;
+      }
+      .cardd {
+        height: 250px;
+        opacity: 0.1;
+        background-color: rgb(0, 0, 0);
+        flex: 1;
+        transition: 0.5s ;
+        margin: 0 5px;
+      }
+
+      .cardd:hover {
+        flex: 5;
+        opacity: 1;
+        height: 300px;
+      }
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    </style>
+    
+    <p data-aos="zoom-in">Pencet love nya dehh
+      <i onclick="tanya()" class="material-icons-sharp"> favorite </i></p>
+
+    <script>
+
+      var musik = "";
+
+    </script>
+    <script> AOS.init({ once: true, }); </script> <script> if(musik == "") { musik = "https://dekatutorial.github.io/Gellen%20Martadinata%20-%20Selamat%20Ulang%20Tahun.mp3"} var audio = new Audio(musik); audio.loop = true; audio.autoplay = true; function mulai() { audio.play(); document.querySelector(".open").style = "opacity: 0;"; document.querySelector(".body").style = "overflow-y: scroll;"; setTimeout(function () { document.querySelector(".open").style.display = "none"; }, 1000); } function wa(isi) { window.open("Ultah2.html"); } async function tanya() { var { value: kado } = await swal.fire({ title: "siapa orang spesial mu?", input: "text", showCancelButton: false, }); if (kado) { await swal.fire("ada hadiah lagi nihh pencet ok ya sayangg"); wa(kado); } else { await swal.fire("masa kosong, berati nda aku dong di hatimu"); tanya(); } } </script> 
