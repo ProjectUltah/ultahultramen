@@ -54,7 +54,7 @@
         display:flex;
       }
       .cardd {
-        height: 250px;
+        height: 30%;
         opacity: 0.1;
         background-color: rgb(0, 0, 0);
         flex: 1;
